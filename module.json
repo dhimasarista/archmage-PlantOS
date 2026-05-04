@@ -1,0 +1,413 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.github.derangga",
+    "module": "shadcn-ui-kmp",
+    "version": "0.2.2",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "metadataApiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.20"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.10.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.foundation",
+          "module": "foundation",
+          "version": {
+            "requires": "1.10.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.material3",
+          "module": "material3",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.10.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.components",
+          "module": "components-resources",
+          "version": {
+            "requires": "1.10.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.ui",
+          "module": "ui-tooling-preview",
+          "version": {
+            "requires": "1.10.2"
+          }
+        },
+        {
+          "group": "io.coil-kt.coil3",
+          "module": "coil-compose",
+          "version": {
+            "requires": "3.3.0"
+          }
+        },
+        {
+          "group": "io.coil-kt.coil3",
+          "module": "coil-svg",
+          "version": {
+            "requires": "3.3.0"
+          }
+        },
+        {
+          "group": "io.coil-kt.coil3",
+          "module": "coil-network-ktor3",
+          "version": {
+            "requires": "3.3.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-datetime",
+          "version": {
+            "requires": "0.7.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.material",
+          "module": "material-icons-extended",
+          "version": {
+            "requires": "1.7.3"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-darwin",
+          "version": {
+            "requires": "3.3.2"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "shadcn-ui-kmp-metadata.jar",
+          "url": "shadcn-ui-kmp-0.2.2.jar",
+          "size": 37430,
+          "sha512": "50aebf9d778017eea8e533cafa3c6d9e41a2d1a93586c2558c61942d49b72a8cabb4019014c6dd2f4450ed58df227133fd479681ee12a94b1f77ad5186322ef1",
+          "sha256": "3135023ef302b86323eda75947540dc4eac0bca7fd74ba3157446c65afedde0e",
+          "sha1": "0ccc552eaf66f527f2c32faa9d946d6cb9c0168d",
+          "md5": "9cc3f7b10b59bb5aca2a31244a4f38a8"
+        }
+      ]
+    },
+    {
+      "name": "metadataSourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "files": [
+        {
+          "name": "shadcn-ui-kmp-kotlin-sources.jar",
+          "url": "shadcn-ui-kmp-0.2.2-sources.jar",
+          "size": 71507,
+          "sha512": "a33c19bc14e8e95711aa8fef9121e3e5c1188d952e5fa8b93db490efe57fb6b4e6c675d19f0e6c744b5530ede47546dc278d6be5df2a7232dad96493cabc4980",
+          "sha256": "59879b5a223766c8db54147c982737df35efd6463c4f157bf4604dfb148ae17c",
+          "sha1": "4d590b7ed1b45fa483127d157a0943b81608434c",
+          "md5": "62a881a8a6ac7f96c8aef1e8e9e32b79"
+        }
+      ]
+    },
+    {
+      "name": "androidApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../shadcn-ui-kmp-android/0.2.2/shadcn-ui-kmp-android-0.2.2.module",
+        "group": "io.github.derangga",
+        "module": "shadcn-ui-kmp-android",
+        "version": "0.2.2"
+      }
+    },
+    {
+      "name": "androidRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../shadcn-ui-kmp-android/0.2.2/shadcn-ui-kmp-android-0.2.2.module",
+        "group": "io.github.derangga",
+        "module": "shadcn-ui-kmp-android",
+        "version": "0.2.2"
+      }
+    },
+    {
+      "name": "androidSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../shadcn-ui-kmp-android/0.2.2/shadcn-ui-kmp-android-0.2.2.module",
+        "group": "io.github.derangga",
+        "module": "shadcn-ui-kmp-android",
+        "version": "0.2.2"
+      }
+    },
+    {
+      "name": "iosArm64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../shadcn-ui-kmp-iosarm64/0.2.2/shadcn-ui-kmp-iosarm64-0.2.2.module",
+        "group": "io.github.derangga",
+        "module": "shadcn-ui-kmp-iosarm64",
+        "version": "0.2.2"
+      }
+    },
+    {
+      "name": "iosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../shadcn-ui-kmp-iosarm64/0.2.2/shadcn-ui-kmp-iosarm64-0.2.2.module",
+        "group": "io.github.derangga",
+        "module": "shadcn-ui-kmp-iosarm64",
+        "version": "0.2.2"
+      }
+    },
+    {
+      "name": "iosArm64ResourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.libraryelements": "kotlin-multiplatformresources",
+        "org.gradle.usage": "kotlin-multiplatformresources",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../shadcn-ui-kmp-iosarm64/0.2.2/shadcn-ui-kmp-iosarm64-0.2.2.module",
+        "group": "io.github.derangga",
+        "module": "shadcn-ui-kmp-iosarm64",
+        "version": "0.2.2"
+      }
+    },
+    {
+      "name": "iosArm64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../shadcn-ui-kmp-iosarm64/0.2.2/shadcn-ui-kmp-iosarm64-0.2.2.module",
+        "group": "io.github.derangga",
+        "module": "shadcn-ui-kmp-iosarm64",
+        "version": "0.2.2"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../shadcn-ui-kmp-iossimulatorarm64/0.2.2/shadcn-ui-kmp-iossimulatorarm64-0.2.2.module",
+        "group": "io.github.derangga",
+        "module": "shadcn-ui-kmp-iossimulatorarm64",
+        "version": "0.2.2"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../shadcn-ui-kmp-iossimulatorarm64/0.2.2/shadcn-ui-kmp-iossimulatorarm64-0.2.2.module",
+        "group": "io.github.derangga",
+        "module": "shadcn-ui-kmp-iossimulatorarm64",
+        "version": "0.2.2"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64ResourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.libraryelements": "kotlin-multiplatformresources",
+        "org.gradle.usage": "kotlin-multiplatformresources",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../shadcn-ui-kmp-iossimulatorarm64/0.2.2/shadcn-ui-kmp-iossimulatorarm64-0.2.2.module",
+        "group": "io.github.derangga",
+        "module": "shadcn-ui-kmp-iossimulatorarm64",
+        "version": "0.2.2"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../shadcn-ui-kmp-iossimulatorarm64/0.2.2/shadcn-ui-kmp-iossimulatorarm64-0.2.2.module",
+        "group": "io.github.derangga",
+        "module": "shadcn-ui-kmp-iossimulatorarm64",
+        "version": "0.2.2"
+      }
+    },
+    {
+      "name": "iosX64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../shadcn-ui-kmp-iosx64/0.2.2/shadcn-ui-kmp-iosx64-0.2.2.module",
+        "group": "io.github.derangga",
+        "module": "shadcn-ui-kmp-iosx64",
+        "version": "0.2.2"
+      }
+    },
+    {
+      "name": "iosX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../shadcn-ui-kmp-iosx64/0.2.2/shadcn-ui-kmp-iosx64-0.2.2.module",
+        "group": "io.github.derangga",
+        "module": "shadcn-ui-kmp-iosx64",
+        "version": "0.2.2"
+      }
+    },
+    {
+      "name": "iosX64ResourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.libraryelements": "kotlin-multiplatformresources",
+        "org.gradle.usage": "kotlin-multiplatformresources",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../shadcn-ui-kmp-iosx64/0.2.2/shadcn-ui-kmp-iosx64-0.2.2.module",
+        "group": "io.github.derangga",
+        "module": "shadcn-ui-kmp-iosx64",
+        "version": "0.2.2"
+      }
+    },
+    {
+      "name": "iosX64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../shadcn-ui-kmp-iosx64/0.2.2/shadcn-ui-kmp-iosx64-0.2.2.module",
+        "group": "io.github.derangga",
+        "module": "shadcn-ui-kmp-iosx64",
+        "version": "0.2.2"
+      }
+    }
+  ]
+}

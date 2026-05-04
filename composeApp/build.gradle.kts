@@ -29,17 +29,6 @@ kotlin {
     
     jvm()
     
-    js {
-        browser()
-        binaries.executable()
-    }
-    
-    @OptIn(ExperimentalWasmDsl::class)
-    wasmJs {
-        browser()
-        binaries.executable()
-    }
-    
     sourceSets {
         androidMain.dependencies {
             implementation(libs.compose.uiToolingPreview)
@@ -55,6 +44,11 @@ kotlin {
             implementation(libs.androidx.lifecycle.viewmodelCompose)
             implementation(libs.androidx.lifecycle.runtimeCompose)
             implementation(projects.shared)
+            
+            // Required by Shadcn KMP source code
+            implementation("br.com.devsrsouza.compose.icons.jetbrains:lucide:1.1.1")
+            implementation("br.com.devsrsouza.compose.icons.jetbrains:simple-icons:1.1.1")
+            implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.6.1")
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
@@ -95,7 +89,6 @@ android {
 
 dependencies {
     debugImplementation(libs.compose.uiTooling)
-    implementation("io.github.derangga:shadcn-ui-kmp:0.2.2")
 }
 
 compose.desktop {
