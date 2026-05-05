@@ -54,8 +54,8 @@ class DateFormatter(private val pattern: String) {
             "Jan", "Feb", "Mar", "Apr", "May", "Jun",
             "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
         )
-        val monthName = monthNames[date.month.ordinal - 1]
-        return "$monthName ${date.day.toString().padStart(2, '0')}, ${date.year}"
+        val monthName = monthNames[date.month.ordinal]
+        return "$monthName ${date.dayOfMonth.toString().padStart(2, '0')}, ${date.year}"
     }
 
     companion object {

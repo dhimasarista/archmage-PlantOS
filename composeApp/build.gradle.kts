@@ -38,16 +38,15 @@ kotlin {
             implementation(libs.compose.runtime)
             implementation(libs.compose.foundation)
             implementation(libs.compose.material3)
+            implementation(compose.materialIconsExtended)
             implementation(libs.compose.ui)
             implementation(libs.compose.components.resources)
             implementation(libs.compose.uiToolingPreview)
             implementation(libs.androidx.lifecycle.viewmodelCompose)
             implementation(libs.androidx.lifecycle.runtimeCompose)
+            implementation(libs.coil3.compose)
             implementation(projects.shared)
             
-            // Required by Shadcn KMP source code
-            implementation("br.com.devsrsouza.compose.icons.jetbrains:lucide:1.1.1")
-            implementation("br.com.devsrsouza.compose.icons.jetbrains:simple-icons:1.1.1")
             implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.6.1")
         }
         commonTest.dependencies {

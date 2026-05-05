@@ -51,13 +51,12 @@ import com.shadcn.ui.themes.ShadcnStyles
 import com.shadcn.ui.themes.radius
 import com.shadcn.ui.themes.styles
 import kotlinx.datetime.DayOfWeek
+import kotlinx.datetime.Clock
 import kotlinx.datetime.LocalDate
 import kotlinx.datetime.Month
 import kotlinx.datetime.TimeZone
 import kotlinx.datetime.toLocalDateTime
 import kotlin.math.roundToInt
-import kotlin.time.Clock
-import kotlin.time.ExperimentalTime
 
 enum class DateSelectionMode {
     /** Allows selection of all dates. */
@@ -144,7 +143,6 @@ data class YearMonth(val year: Int, val month: Month) {
     }
 
     companion object {
-        @OptIn(ExperimentalTime::class)
         fun now(): YearMonth {
             val today = Clock.System.now().toLocalDateTime(TimeZone.currentSystemDefault()).date
             return YearMonth(today.year, today.month)
@@ -274,7 +272,6 @@ fun Calendar(
  * @param dateSelectionMode Defines which dates are clickable (All, PastOrToday, FutureOrToday).
  * @param colors [CalendarStyle] that will be used to resolve the colors used for this calendar in
  */
-@OptIn(ExperimentalTime::class)
 @Composable
 fun Calendar(
     modifier: Modifier = Modifier,
@@ -634,7 +631,7 @@ fun Calendar(
                                 contentAlignment = Alignment.Center
                             ) {
                                 Text(
-                                    text = date.day.toString(),
+                                    text = date.dayOfMonth.toString(),
                                     style = textStyle,
                                     color = textColor
                                 )
@@ -746,7 +743,6 @@ private fun MonthPickerDialog(
 /**
  * Dialog for selecting a year.
  */
-@OptIn(ExperimentalTime::class)
 @Composable
 private fun YearPickerDialog(
     currentYear: Int,
